@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: 243 244 246;
+  --foreground-rgb: 17 24 39;
+}
+
+body {
+  background: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
+  font-family: "Inter", system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+html[data-theme="dark"] {
+  --background-rgb: 17 24 39;
+  --foreground-rgb: 243 244 246;
+}
